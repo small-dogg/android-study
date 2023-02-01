@@ -16,7 +16,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:textColor="#FB0000"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold|italic" />
 
     <TextView
         android:id="@+id/textview_text2"
