@@ -14,10 +14,10 @@ class TextViewActivity : AppCompatActivity() {
         val text1 = findViewById<TextView>(R.id.text1)
         text1.text = "반갑습니다."
 
-        findViewById<TextView>(R.id.textview_text2).text="헬로우!!"
+        findViewById<TextView>(R.id.textview_text2).text = "헬로우!!"
 
 
-        textview_text2.text="오우 이게 되네?"
+        textview_text2.text = "오우 이게 되네?"
         textview_text2.setBackgroundColor(Color.RED)
 
         text1.append("추가입니다")
