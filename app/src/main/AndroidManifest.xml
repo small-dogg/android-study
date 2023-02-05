@@ -54,6 +54,10 @@
         <activity
             android:name=".EditTextViewActivity"
             android:exported="true">
+        </activity>
+        <activity
+            android:name=".TextInputViewActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
