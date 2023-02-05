@@ -10,22 +10,25 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="20">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:hint="안내 문구 입니다." />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button40"
+        android:id="@+id/textInputButton01"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="문자열 가져오기" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textInputTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TextView"
