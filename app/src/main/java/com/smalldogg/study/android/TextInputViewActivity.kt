@@ -25,12 +25,12 @@ class TextInputViewActivity : AppCompatActivity() {
         textInputLayout1.editText?.addTextChangedListener(listener1)
     }
 
-    val listener1 = object : TextWatcher{
+    val listener1 = object : TextWatcher {
         override fun afterTextChanged(s: Editable?) {
             if (s != null) {
                 if (s.length > 20) {
                     textInputLayout1.error = "20글자 이하로 입력해주세요."
-                }else{
+                } else {
                     textInputLayout1.error = null
                 }
             }
