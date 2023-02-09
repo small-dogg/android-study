@@ -67,6 +67,11 @@
         <activity
             android:name=".ToggleButtonViewActivity"
             android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".CheckboxViewActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
