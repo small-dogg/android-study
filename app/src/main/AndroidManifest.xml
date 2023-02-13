@@ -80,6 +80,10 @@
         <activity
             android:name=".SwitchViewActivity"
             android:exported="true">
+        </activity>
+        <activity
+            android:name=".CheckedTextViewActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
