@@ -35,4 +35,52 @@
         android:checkable="true"
         android:text="Chip Choice"
         android:theme="@style/Theme.MaterialComponents.Light" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip"
+        style="@style/Widget.MaterialComponents.Chip.Entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chip Entry"
+        android:theme="@style/Theme.MaterialComponents.Light" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip3"
+        style="@style/Widget.MaterialComponents.Chip.Filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chip Filter"
+        android:theme="@style/Platform.MaterialComponents.Light" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:checkedChip="@id/chip4"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip4"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="group1"
+            android:theme="@style/Platform.MaterialComponents.Light" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip5"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="group2"
+            android:theme="@style/Platform.MaterialComponents.Light" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip6"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="group3"
+            android:theme="@style/Platform.MaterialComponents.Light" />
+    </com.google.android.material.chip.ChipGroup>
 </LinearLayout>
