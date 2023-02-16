@@ -88,6 +88,11 @@
         <activity
             android:name=".ChipViewActivity"
             android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".ProgressBarViewActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
