@@ -19,17 +19,61 @@
         android:id="@+id/ratingBar2"
         style="@style/Widget.AppCompat.RatingBar.Small"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:isIndicator="false" />
 
     <RatingBar
         android:id="@+id/ratingBar3"
         style="@style/Widget.AppCompat.RatingBar.Indicator"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:isIndicator="false" />
 
     <RatingBar
         android:id="@+id/ratingBar4"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="false"
         android:progressDrawable="@drawable/custom_star" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/button63"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="rating 값 가져오기" />
+
+    <Button
+        android:id="@+id/button64"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="rating 값 설정하기" />
 </LinearLayout>
