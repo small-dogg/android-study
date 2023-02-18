@@ -37,8 +37,12 @@ class SeekBarViewActivity : AppCompatActivity() {
         override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
             when (seekBar?.id) {
 
-                R.id.seekBar -> { textView14.text = "첫번째 프로그래스바가 ${progress}로 설정됨\n" }
-                R.id.seekBar2 -> { textView14.text = "첫번째 프로그래스바가 ${progress}로 설정됨\n" }
+                R.id.seekBar -> {
+                    textView14.text = "첫번째 프로그래스바가 ${progress}로 설정됨\n"
+                }
+                R.id.seekBar2 -> {
+                    textView14.text = "첫번째 프로그래스바가 ${progress}로 설정됨\n"
+                }
             }
 
             if (fromUser) {
@@ -51,16 +55,16 @@ class SeekBarViewActivity : AppCompatActivity() {
         //터치중일 때
         override fun onStartTrackingTouch(seekBar: SeekBar?) {
             when (seekBar?.id) {
-                R.id.seekBar -> textView15.text="첫번째 SeekBar 사용자 터치 시작"
-                R.id.seekBar2 -> textView15.text="두번째 SeekBar 사용자 터치 시작"
+                R.id.seekBar -> textView15.text = "첫번째 SeekBar 사용자 터치 시작"
+                R.id.seekBar2 -> textView15.text = "두번째 SeekBar 사용자 터치 시작"
             }
         }
 
         //터치 끝났을 때
         override fun onStopTrackingTouch(seekBar: SeekBar?) {
             when (seekBar?.id) {
-                R.id.seekBar -> textView15.text="첫번째 SeekBar 사용자 터치 종료"
-                R.id.seekBar2 -> textView15.text="두번째 SeekBar 사용자 터치 종료"
+                R.id.seekBar -> textView15.text = "첫번째 SeekBar 사용자 터치 종료"
+                R.id.seekBar2 -> textView15.text = "두번째 SeekBar 사용자 터치 종료"
             }
         }
 

@@ -1,12 +1,9 @@
 package com.smalldogg.study.android
 
-import android.annotation.SuppressLint
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.CompoundButton
 import android.widget.CompoundButton.OnCheckedChangeListener
-import kotlinx.android.synthetic.main.button_view_activity.*
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.switch_view_activity.*
 
 class SwitchViewActivity : AppCompatActivity() {

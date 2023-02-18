@@ -1,9 +1,9 @@
 package com.smalldogg.study.android
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.CompoundButton
 import android.widget.CompoundButton.OnCheckedChangeListener
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.checkbox_view_activity.*
 
 class CheckboxViewActivity : AppCompatActivity() {
@@ -42,7 +42,7 @@ class CheckboxViewActivity : AppCompatActivity() {
 
     }
 
-    val listener1 = object : OnCheckedChangeListener{
+    val listener1 = object : OnCheckedChangeListener {
         override fun onCheckedChanged(buttonView: CompoundButton?, isChecked: Boolean) {
             when (buttonView?.id) {
                 R.id.checkBox2 -> {
@@ -62,7 +62,6 @@ class CheckboxViewActivity : AppCompatActivity() {
             }
         }
     }
-
 
 
 }

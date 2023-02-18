@@ -1,10 +1,7 @@
 package com.smalldogg.study.android
 
-import android.annotation.SuppressLint
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import kotlinx.android.synthetic.main.button_view_activity.*
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.chip_view_activity.*
 
 class ChipViewActivity : AppCompatActivity() {

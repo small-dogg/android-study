@@ -1,11 +1,11 @@
 package com.smalldogg.study.android
 
 import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.inputmethod.InputMethodManager
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.text_input_view_activity.*
 
 class TextInputViewActivity : AppCompatActivity() {
