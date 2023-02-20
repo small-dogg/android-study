@@ -113,6 +113,11 @@
         <activity
             android:name=".CustomListView1Activity"
             android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".CustomListView2Activity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
