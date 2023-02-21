@@ -138,6 +138,11 @@
         <activity
             android:name=".ViewPagerActivity"
             android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".AutoCompleteTextViewActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
