@@ -121,6 +121,11 @@
         </activity>
 
         <activity
+            android:name=".CustomAdapterViewActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
             android:name=".SpinnerViewActivity"
             android:exported="true">
             <intent-filter>
