@@ -158,6 +158,11 @@
         <activity
             android:name=".MultiChoiceListViewActivity"
             android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".RecyclerViewActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
