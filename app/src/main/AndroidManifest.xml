@@ -143,6 +143,11 @@
         <activity
             android:name=".AutoCompleteTextViewActivity"
             android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".MultiAutoCompleteTextViewActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
