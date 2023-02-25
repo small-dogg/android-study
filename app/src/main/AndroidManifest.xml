@@ -173,6 +173,11 @@
         <activity
             android:name=".OptionMenuActivity"
             android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".ContextMenuActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
