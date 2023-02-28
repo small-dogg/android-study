@@ -5,8 +5,6 @@ import android.view.View
 import android.view.View.OnClickListener
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import kotlinx.android.synthetic.main.recycler_view_activity.*
@@ -15,8 +13,8 @@ import kotlinx.android.synthetic.main.row4.view.*
 class RecyclerViewActivity : AppCompatActivity() {
 
     val imgRes = intArrayOf(
-        R.drawable.imgflag1,R.drawable.imgflag2,R.drawable.imgflag3,R.drawable.imgflag4,
-        R.drawable.imgflag5,R.drawable.imgflag6,R.drawable.imgflag7,R.drawable.imgflag8,
+        R.drawable.imgflag1, R.drawable.imgflag2, R.drawable.imgflag3, R.drawable.imgflag4,
+        R.drawable.imgflag5, R.drawable.imgflag6, R.drawable.imgflag7, R.drawable.imgflag8,
     )
 
     val data1 = arrayOf(
@@ -34,11 +32,12 @@ class RecyclerViewActivity : AppCompatActivity() {
 //        recycler1.layoutManager = GridLayoutManager(this, 4)
 //        recycler1.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
 //        recycler1.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.HORIZONTAL)
-        recycler1.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.HORIZONTAL)
+        recycler1.layoutManager =
+            StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.HORIZONTAL)
     }
 
     // RecyclerView의 Adapter 클래스
-    inner class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolderClass>(){
+    inner class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolderClass>() {
 
         //항목 구성을 위한 ViewHolder 객체가 필요할 때 호출되는 메서드
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolderClass {
@@ -60,7 +59,8 @@ class RecyclerViewActivity : AppCompatActivity() {
         }
 
         //ViewHolder 클랫스
-        inner class ViewHolderClass(itemView: View) : RecyclerView.ViewHolder(itemView), OnClickListener{
+        inner class ViewHolderClass(itemView: View) : RecyclerView.ViewHolder(itemView),
+            OnClickListener {
             // 항목 View 내부의 View 객체의 주소 값을 담는다.
             val rowImageView = itemView.rowImageView4
             val rowTextView = itemView.rowTextView4
@@ -69,7 +69,6 @@ class RecyclerViewActivity : AppCompatActivity() {
             }
 
         }
-
 
 
     }

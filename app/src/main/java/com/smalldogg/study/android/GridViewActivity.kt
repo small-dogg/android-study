@@ -10,8 +10,10 @@ import kotlinx.android.synthetic.main.grid_view_activity.*
 
 class GridViewActivity : AppCompatActivity() {
 
-    val data1 = arrayOf("그리드1","그리드2","그리드3","그리드4","그리드5",
-        "그리드6","그리드7","그리드8","그리드9","그리드10",)
+    val data1 = arrayOf(
+        "그리드1", "그리드2", "그리드3", "그리드4", "그리드5",
+        "그리드6", "그리드7", "그리드8", "그리드9", "그리드10",
+    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

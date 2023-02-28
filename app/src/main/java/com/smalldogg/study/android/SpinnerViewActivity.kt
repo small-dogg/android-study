@@ -34,7 +34,7 @@ class SpinnerViewActivity : AppCompatActivity() {
     val listener1 = object : OnItemSelectedListener {
         override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
             when (p0?.id) {
-                R.id.spinner ->{
+                R.id.spinner -> {
                     textView24.text = "${data1[p2]} 번째 항목이 선택되었습니다."
                 }
             }

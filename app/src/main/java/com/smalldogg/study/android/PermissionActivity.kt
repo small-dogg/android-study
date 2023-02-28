@@ -37,7 +37,7 @@ class PermissionActivity : AppCompatActivity() {
 
         button78.setOnClickListener {
             //거부된 권한을 사용자에게 확인받음
-            requestPermissions(permissionList,0)
+            requestPermissions(permissionList, 0)
         }
     }
 

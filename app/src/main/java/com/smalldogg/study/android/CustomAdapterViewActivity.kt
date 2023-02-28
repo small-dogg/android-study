@@ -4,15 +4,13 @@ import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
-import android.widget.Button
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.custom_adapter_view_activity.*
 import kotlinx.android.synthetic.main.row3.view.*
 
 class CustomAdapterViewActivity : AppCompatActivity() {
 
-    val data1 = arrayOf("데이터1","데이터2","데이터3","데이터4","데이터5")
+    val data1 = arrayOf("데이터1", "데이터2", "데이터3", "데이터4", "데이터5")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

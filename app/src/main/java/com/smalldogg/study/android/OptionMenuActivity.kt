@@ -18,9 +18,9 @@ class OptionMenuActivity : AppCompatActivity() {
 
         menu?.add(Menu.NONE, Menu.FIRST, Menu.NONE, "코드 메뉴1")
         val sub = menu?.addSubMenu("코드 메뉴2")
-        sub?.add(Menu.NONE, Menu.FIRST+10, Menu.NONE, "코드 메뉴 2-1")
-        sub?.add(Menu.NONE, Menu.FIRST+20, Menu.NONE, "코드 메뉴 2-1")
-        menu?.add(Menu.NONE, Menu.FIRST+2, Menu.NONE, "코드 메뉴3")
+        sub?.add(Menu.NONE, Menu.FIRST + 10, Menu.NONE, "코드 메뉴 2-1")
+        sub?.add(Menu.NONE, Menu.FIRST + 20, Menu.NONE, "코드 메뉴 2-1")
+        menu?.add(Menu.NONE, Menu.FIRST + 2, Menu.NONE, "코드 메뉴3")
         return true
     }
 
@@ -37,9 +37,9 @@ class OptionMenuActivity : AppCompatActivity() {
 
         when (item.itemId) {
             Menu.FIRST -> textView35.text = "코드 메뉴 1을 눌렀습니다."
-            Menu.FIRST+10 -> textView35.text = "코드 메뉴 2-1을 눌렀습니다."
-            Menu.FIRST+20 -> textView35.text = "코드 메뉴 2-2을 눌렀습니다."
-            Menu.FIRST+2 -> textView35.text = "코드 메뉴 3을 눌렀습니다."
+            Menu.FIRST + 10 -> textView35.text = "코드 메뉴 2-1을 눌렀습니다."
+            Menu.FIRST + 20 -> textView35.text = "코드 메뉴 2-2을 눌렀습니다."
+            Menu.FIRST + 2 -> textView35.text = "코드 메뉴 3을 눌렀습니다."
         }
 
         return super.onOptionsItemSelected(item)

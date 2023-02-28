@@ -1,11 +1,9 @@
 package com.smalldogg.study.android
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
 import android.view.View.OnScrollChangeListener
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.button_view_activity.*
 import kotlinx.android.synthetic.main.scroll_view_activity.*
 
 class ScrollViewActivity : AppCompatActivity() {
@@ -27,8 +25,8 @@ class ScrollViewActivity : AppCompatActivity() {
 //            scroll2.smoothScrollTo(500,0)
 
             //현재 윛에서 지정된 만큼 애니메이션과 함께 이동
-            scroll1.smoothScrollBy(0,10)
-            scroll2.smoothScrollBy(10,0)
+            scroll1.smoothScrollBy(0, 10)
+            scroll2.smoothScrollBy(10, 0)
         }
         scroll1.setOnScrollChangeListener(listener1)
         scroll2.setOnScrollChangeListener { v, scrollX, scrollY, oldScrollX, oldScrollY ->

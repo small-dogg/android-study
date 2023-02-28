@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.MultiAutoCompleteTextView
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.checkbox_view_activity.*
 import kotlinx.android.synthetic.main.multi_auto_complete_text_view_activity.*
 
 //구분자를 활룡해서 여러 문자열을 동시에 입력 받을 수 있음

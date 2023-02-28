@@ -8,7 +8,7 @@ import kotlinx.android.synthetic.main.multi_choice_list_view_activity.*
 
 class MultiChoiceListViewActivity : AppCompatActivity() {
 
-    val data1 = arrayOf("데이터1","데이터2","데이터3","데이터4","데이터5")
+    val data1 = arrayOf("데이터1", "데이터2", "데이터3", "데이터4", "데이터5")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,10 +22,12 @@ class MultiChoiceListViewActivity : AppCompatActivity() {
         multiChoiceListView.setItemChecked(2, true)
         multiChoiceListView.setItemChecked(4, true)
 
-        multiChoiceListView.setOnItemClickListener { adapterView, view, i, l -> textView32.text = "${data1[i]} 선택" }
+        multiChoiceListView.setOnItemClickListener { adapterView, view, i, l ->
+            textView32.text = "${data1[i]} 선택"
+        }
 
         button76.setOnClickListener {
-            textView33.text =""
+            textView33.text = ""
 
             //현재 체크 상태에 관련된 객체를 가져온다.
 

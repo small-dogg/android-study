@@ -92,98 +92,79 @@
 
         <activity
             android:name=".RatingBarViewActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
 
         <activity
             android:name=".ScrollViewActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
 
         <activity
             android:name=".CardViewActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
 
         <activity
             android:name=".ListViewActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
 
         <activity
             android:name=".CustomListView1Activity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
 
         <activity
             android:name=".CustomListView2Activity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
 
         <activity
             android:name=".CustomAdapterViewActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
 
         <activity
             android:name=".SpinnerViewActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
 
         <activity
             android:name=".GridViewActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
 
         <activity
             android:name=".ViewPagerActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
 
         <activity
             android:name=".AutoCompleteTextViewActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
 
         <activity
             android:name=".MultiAutoCompleteTextViewActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
 
         <activity
             android:name=".SingleChoiceListViewActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
 
         <activity
             android:name=".MultiChoiceListViewActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
 
         <activity
             android:name=".RecyclerViewActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
 
         <activity
             android:name=".PermissionActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
 
         <activity
             android:name=".OptionMenuActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
 
         <activity
             android:name=".ContextMenuActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
 
         <activity
             android:name=".PopupMenuActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
 
         <activity
             android:name=".ActivityLifeCycleActivity"

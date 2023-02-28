@@ -8,7 +8,7 @@ import kotlinx.android.synthetic.main.single_choice_list_view_activity.*
 
 class SingleChoiceListViewActivity : AppCompatActivity() {
 
-    val data1 = arrayOf("데이터1","데이터2","데이터3","데이터4","데이터5")
+    val data1 = arrayOf("데이터1", "데이터2", "데이터3", "데이터4", "데이터5")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,7 +20,9 @@ class SingleChoiceListViewActivity : AppCompatActivity() {
         singleChoiceListView.choiceMode = ListView.CHOICE_MODE_SINGLE
         singleChoiceListView.setItemChecked(2, true)
 
-        singleChoiceListView.setOnItemClickListener { adapterView, view, i, l -> textView31.text = "${data1[i]} 선택" }
+        singleChoiceListView.setOnItemClickListener { adapterView, view, i, l ->
+            textView31.text = "${data1[i]} 선택"
+        }
     }
 
 }
