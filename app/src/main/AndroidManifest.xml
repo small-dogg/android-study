@@ -2,183 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <application
-
-        android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.Androidstudy"
-
-        tools:targetApi="31">
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
-        <activity
-            android:name=".LinearLayoutActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".FrameLayoutActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".TableLayoutActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".GridLayoutActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".ConstraintLayoutActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".SpaceActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".IncludeOtherLayout"
-            android:exported="true"></activity>
-        <activity
-            android:name=".RelativeLayoutActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".TextViewActivity"
-            android:exported="true">
-
-        </activity>
-        <activity
-            android:name=".ButtonViewActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".EditTextViewActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".TextInputViewActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".ImageViewActivity"
-            android:exported="true">
-
-        </activity>
-        <activity
-            android:name=".ToggleButtonViewActivity"
-            android:exported="true">
-
-        </activity>
-        <activity
-            android:name=".CheckboxViewActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".RadioButtonViewActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".SwitchViewActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".CheckedTextViewActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".ChipViewActivity"
-            android:exported="true"></activity>
-
-        <activity
-            android:name=".ProgressBarViewActivity"
-            android:exported="true"></activity>
-
-        <activity
-            android:name=".SeekBarViewActivity"
-            android:exported="true"></activity>
-
-        <activity
-            android:name=".RatingBarViewActivity"
-            android:exported="true"></activity>
-
-        <activity
-            android:name=".ScrollViewActivity"
-            android:exported="true"></activity>
-
-        <activity
-            android:name=".CardViewActivity"
-            android:exported="true"></activity>
-
-        <activity
-            android:name=".ListViewActivity"
-            android:exported="true"></activity>
-
-        <activity
-            android:name=".CustomListView1Activity"
-            android:exported="true"></activity>
-
-        <activity
-            android:name=".CustomListView2Activity"
-            android:exported="true"></activity>
-
-        <activity
-            android:name=".CustomAdapterViewActivity"
-            android:exported="true"></activity>
-
-        <activity
-            android:name=".SpinnerViewActivity"
-            android:exported="true"></activity>
-
-        <activity
-            android:name=".GridViewActivity"
-            android:exported="true"></activity>
-
-        <activity
-            android:name=".ViewPagerActivity"
-            android:exported="true"></activity>
-
-        <activity
-            android:name=".AutoCompleteTextViewActivity"
-            android:exported="true"></activity>
-
-        <activity
-            android:name=".MultiAutoCompleteTextViewActivity"
-            android:exported="true"></activity>
-
-        <activity
-            android:name=".SingleChoiceListViewActivity"
-            android:exported="true"></activity>
-
-        <activity
-            android:name=".MultiChoiceListViewActivity"
-            android:exported="true"></activity>
-
-        <activity
-            android:name=".RecyclerViewActivity"
-            android:exported="true"></activity>
-
-        <activity
-            android:name=".PermissionActivity"
-            android:exported="true"></activity>
-
-        <activity
-            android:name=".OptionMenuActivity"
-            android:exported="true"></activity>
-
-        <activity
-            android:name=".ContextMenuActivity"
-            android:exported="true"></activity>
-
-        <activity
-            android:name=".PopupMenuActivity"
-            android:exported="true"></activity>
-
-        <activity
-            android:name=".ActivityLifeCycleActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-    </application>
-
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -186,4 +9,152 @@
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Androidstudy"
+        tools:targetApi="31">
+        <activity
+            android:name=".SecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".LinearLayoutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FrameLayoutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TableLayoutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".GridLayoutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ConstraintLayoutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SpaceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".IncludeOtherLayout"
+            android:exported="true" />
+        <activity
+            android:name=".RelativeLayoutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TextViewActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".ButtonViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EditTextViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TextInputViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ImageViewActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".ToggleButtonViewActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".CheckboxViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RadioButtonViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SwitchViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CheckedTextViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ChipViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ProgressBarViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SeekBarViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RatingBarViewActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".ScrollViewActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".CardViewActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".ListViewActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".CustomListView1Activity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".CustomListView2Activity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".CustomAdapterViewActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".SpinnerViewActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".GridViewActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".ViewPagerActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".AutoCompleteTextViewActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".MultiAutoCompleteTextViewActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".SingleChoiceListViewActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".MultiChoiceListViewActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".RecyclerViewActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".PermissionActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".OptionMenuActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".ContextMenuActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".PopupMenuActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ActivityLifeCycleActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".StartActivity"
+            android:name=".PopupMenuActivity"
+            android:exported="true"></activity>
+
+    </application>
+
 </manifest>
