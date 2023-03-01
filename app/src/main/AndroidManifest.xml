@@ -150,11 +150,6 @@
             android:name=".ActivityLifeCycleActivity"
             android:exported="true">
         </activity>
-        <activity
-            android:name=".StartActivity"
-            android:name=".PopupMenuActivity"
-            android:exported="true"></activity>
-
     </application>
 
 </manifest>
