@@ -1,7 +1,7 @@
 package com.smalldogg.study.android
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_second2.*
 
 class SecondActivity_2 : AppCompatActivity() {

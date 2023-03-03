@@ -40,7 +40,7 @@ class OnActivityResultActivity : AppCompatActivity() {
                     Activity.RESULT_OK -> textView39.text = "ThirdActivity에서 돌아왔어요:OK"
                     Activity.RESULT_CANCELED -> textView39.text = "ThirdActivity에서 돌아왔어요:CANCEL"
                     Activity.RESULT_FIRST_USER -> textView39.text = "ThirdActivity에서 돌아왔어요:U1"
-                    Activity.RESULT_FIRST_USER+1 -> textView39.text = "ThirdActivity에서 돌아왔어요:U2"
+                    Activity.RESULT_FIRST_USER + 1 -> textView39.text = "ThirdActivity에서 돌아왔어요:U2"
                 }
 
             }

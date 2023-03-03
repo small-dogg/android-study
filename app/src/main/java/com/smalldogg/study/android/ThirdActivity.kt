@@ -1,7 +1,7 @@
 package com.smalldogg.study.android
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_third.*
 
 class ThirdActivity : AppCompatActivity() {
@@ -25,7 +25,7 @@ class ThirdActivity : AppCompatActivity() {
         }
 
         button88.setOnClickListener {
-            setResult(RESULT_FIRST_USER+1)
+            setResult(RESULT_FIRST_USER + 1)
             finish()
         }
     }
