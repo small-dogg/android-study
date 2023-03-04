@@ -157,6 +157,11 @@
         <activity
             android:name=".OnActivityResultActivity"
             android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".HorseRacingActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
