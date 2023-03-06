@@ -7,18 +7,21 @@ import android.widget.LinearLayout
 import android.widget.SeekBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.size
 import kotlinx.android.synthetic.main.horse_racing_activity.*
+import java.lang.Integer.min
 import java.util.*
 import kotlin.collections.ArrayList
 import kotlin.concurrent.timer
 
 class HorseRacingActivity : AppCompatActivity() {
 
-    var horseList = ArrayList<View>();
+    var horseList = ArrayList<SeekBar>();
+    var statusList = ArrayList<Int>();
 
     var timer : Timer? = null
-    var deltaTime = 0
-    private lateinit var binding: ActivityMainBinding
+    var minValue = 0
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,22 +31,34 @@ class HorseRacingActivity : AppCompatActivity() {
         play.setOnClickListener { TimeFun() }
 
         horseAdd.setOnClickListener {
-            var horse =
-
-            horseList.add()
+            val lLayout = findViewById<LinearLayout>(R.id.horseList)
+            var horse = SeekBar(this)
+            lLayout?.addView(horse)
+            horseList.add(horse)
+            statusList.add(0)
         }
 
         horseDelete.setOnClickListener {
-
+            val lLayout = findViewById<LinearLayout>(R.id.horseList)
+            val lastHorse = horseList.last()
+            lLayout?.removeView(lastHorse)
+            horseList.remove(lastHorse)
+            statusList.remove(statusList.last())
         }
     }
 
     fun TimeFun() {
         timer = timer(period = 100, initialDelay = 0){
-            val nextInt = Random().nextInt(2)
-            if(deltaTime > 100) cancel()
-            deltaTime += nextInt
-            horse1.setProgress(deltaTime)
+            if(minValue > 100) cancel()
+            for (i in 0..horseList.lastIndex) {
+                val nextInt = Random().nextInt(2)
+                var currentValue = statusList.get(i)
+                currentValue += nextInt
+                minValue = min(currentValue,minValue)
+                statusList.set(i,currentValue)
+                horseList.get(i).progress += nextInt
+            }
+
         }
     }
 
@@ -55,28 +70,6 @@ class HorseRacingActivity : AppCompatActivity() {
         )
         layoutParams.setMargins(30, 30, 30, 30)
         seekBar.layoutParams = layoutParams
-
-        // Add SeekBar to LinearLayout
-        binding.rootContainer.addView(seekBar)
-
-        seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
-            override fun onProgressChanged(seekBar: SeekBar, progress: Int, fromUser: Boolean) {
-                // Write code to perform some action when progress is changed.
-            }
-
-            override fun onStartTrackingTouch(seekBar: SeekBar) {
-                // Write code to perform some action when touch is started.
-            }
-
-            override fun onStopTrackingTouch(seekBar: SeekBar) {
-                // Write code to perform some action when touch is stopped.
-                Toast.makeText(
-                    this@MainActivity,
-                    "Progress is " + seekBar.progress + "%",
-                    Toast.LENGTH_SHORT
-                ).show()
-            }
-        })
     }
 
 
