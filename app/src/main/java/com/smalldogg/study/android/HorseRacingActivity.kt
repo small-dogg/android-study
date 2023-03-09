@@ -1,5 +1,8 @@
 package com.smalldogg.study.android
 
+import android.annotation.SuppressLint
+import android.graphics.drawable.Drawable
+import android.graphics.drawable.ShapeDrawable
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
@@ -9,6 +12,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.size
 import kotlinx.android.synthetic.main.horse_racing_activity.*
+import kotlinx.android.synthetic.main.include_other_layout_activity.view.*
 import java.lang.Integer.min
 import java.util.*
 import kotlin.collections.ArrayList
@@ -32,7 +36,7 @@ class HorseRacingActivity : AppCompatActivity() {
 
         horseAdd.setOnClickListener {
             val lLayout = findViewById<LinearLayout>(R.id.horseList)
-            var horse = SeekBar(this)
+            var horse = setupSeekBar()
             lLayout?.addView(horse)
             horseList.add(horse)
             statusList.add(0)
@@ -62,14 +66,20 @@ class HorseRacingActivity : AppCompatActivity() {
         }
     }
 
-    private fun setupSeekBar() {
+    @SuppressLint("ResourceType")
+    private fun setupSeekBar():SeekBar {
         val seekBar = SeekBar(this)
         val layoutParams = LinearLayout.LayoutParams(
             ViewGroup.LayoutParams.MATCH_PARENT,
             ViewGroup.LayoutParams.WRAP_CONTENT
         )
+
+
         layoutParams.setMargins(30, 30, 30, 30)
         seekBar.layoutParams = layoutParams
+
+        seekBar.thumb = Drawable.createFromXml(resources,resources.getXml(R.drawable.horse_thumb))
+        return seekBar
     }
 
 
