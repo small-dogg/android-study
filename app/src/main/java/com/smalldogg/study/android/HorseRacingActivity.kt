@@ -1,9 +1,11 @@
 package com.smalldogg.study.android
 
 import android.annotation.SuppressLint
-import android.graphics.drawable.Drawable
-import android.graphics.drawable.ShapeDrawable
+import android.content.Context
+import android.graphics.Color
+import android.graphics.drawable.*
 import android.os.Bundle
+import android.view.Gravity
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
@@ -78,8 +80,36 @@ class HorseRacingActivity : AppCompatActivity() {
         layoutParams.setMargins(30, 30, 30, 30)
         seekBar.layoutParams = layoutParams
 
+        seekBar.progressDrawable=resources.getDrawable(R.drawable.horse_seekbar)
+
         seekBar.thumb = Drawable.createFromXml(resources,resources.getXml(R.drawable.horse_thumb))
         return seekBar
+    }
+
+    private fun createDrawable(context: Context): Drawable {
+
+        //background drawable
+        val gradientDrawable = GradientDrawable(
+            GradientDrawable.Orientation.LEFT_RIGHT,
+            intArrayOf(Color.parseColor("#E91E63"), Color.parseColor("#FFD5E4"))
+        ) //왼쪽에서 오른쪽으로 그라데이션 되는 drawable
+
+        gradientDrawable.gradientType = GradientDrawable.LINEAR_GRADIENT //그라데이션 종류 (직선 그라데이션)
+        gradientDrawable.setStroke(8, Color.parseColor("#00ffffff")) //stroke
+        gradientDrawable.cornerRadius = 12f //drawable radius
+        gradientDrawable.shape = GradientDrawable.RECTANGLE //drawable shape
+
+        //progress drawable
+        val clipDrawable = ClipDrawable(
+            gradientDrawable, Gravity.LEFT,
+            ClipDrawable.HORIZONTAL
+        )
+
+        val layerDrawable = LayerDrawable(arrayOf(gradientDrawable,clipDrawable))
+        layerDrawable.setId(0, android.R.id.background) //background drawable
+        layerDrawable.setId(1, android.R.id.progress) //progress drawable
+
+        return layerDrawable
     }
 
 
