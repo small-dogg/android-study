@@ -183,6 +183,10 @@
         <activity
             android:name=".ToastActivity"
             android:exported="true">
+        </activity>
+        <activity
+            android:name=".SnackBarActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
