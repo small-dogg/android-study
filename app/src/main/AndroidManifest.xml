@@ -195,6 +195,10 @@
         <activity
             android:name=".ListDialogActivity"
             android:exported="true">
+        </activity>
+        <activity
+            android:name=".ChoiceDialogActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
