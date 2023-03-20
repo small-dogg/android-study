@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/button98"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notification 1" />
+
+    <Button
+        android:id="@+id/button108"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notification 2" />
+
+    <Button
+        android:id="@+id/button109"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notification 3" />
+
+    <Button
+        android:id="@+id/button110"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notification 4" />
+</LinearLayout>
