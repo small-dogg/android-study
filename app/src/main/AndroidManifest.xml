@@ -214,6 +214,10 @@
         <activity
             android:name=".StyleNotificationActivity"
             android:exported="true">
+        </activity>
+        <activity
+            android:name=".MessageNotificationActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
