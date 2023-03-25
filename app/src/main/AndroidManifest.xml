@@ -218,6 +218,10 @@
         <activity
             android:name=".MessageNotificationActivity"
             android:exported="true">
+        </activity>
+        <activity
+            android:name=".ThreadActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
