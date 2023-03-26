@@ -222,6 +222,10 @@
         <activity
             android:name=".ThreadActivity"
             android:exported="true">
+        </activity>
+        <activity
+            android:name=".HandlerActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
