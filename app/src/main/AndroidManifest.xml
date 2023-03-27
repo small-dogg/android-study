@@ -226,6 +226,10 @@
         <activity
             android:name=".HandlerActivity"
             android:exported="true">
+        </activity>
+        <activity
+            android:name=".HandlerMessageActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
