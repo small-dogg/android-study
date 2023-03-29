@@ -4,9 +4,11 @@ import android.annotation.SuppressLint
 import android.graphics.drawable.*
 import android.os.Bundle
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.SeekBar
 import androidx.appcompat.app.AppCompatActivity
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.horse_racing_activity.*
 import kotlinx.android.synthetic.main.include_other_layout_activity.view.*
 import java.lang.Integer.min
@@ -75,7 +77,15 @@ class HorseRacingActivity : AppCompatActivity() {
 
         seekBar.progressDrawable = resources.getDrawable(R.drawable.horse_seekbar)
 
-        seekBar.thumb = Drawable.createFromXml(resources, resources.getXml(R.drawable.horse_thumb))
+        var thumb = ImageView(this)
+        Glide.with(this)
+            .asGif()
+            .load(R.drawable.run_horse)
+            .into(thumb)
+
+
+        seekBar.thumb = thumb.drawable
+
         return seekBar
     }
 }
