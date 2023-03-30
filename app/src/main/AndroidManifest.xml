@@ -12,7 +12,8 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 전화 걸기 권한 -->
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -22,6 +23,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Androidstudy"
         tools:targetApi="31">
+        <service
+            android:name=".TestService"
+            android:enabled="true"
+            android:exported="true"></service>
+
         <receiver
             android:name=".MyReceiver"
             android:enabled="true"
@@ -32,7 +38,6 @@
             <intent-filter>
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
-
         </receiver>
         <receiver
             android:name=".TestReceiver"
@@ -201,8 +206,7 @@
             android:exported="true" />
         <activity
             android:name=".HorseRacingActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".DataActivity"
             android:exported="true" />
@@ -250,15 +254,17 @@
             android:exported="true" />
         <activity
             android:name=".RunOnUiThreadActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".BroadCastReceiverActivity"
-            android:exported="true"></activity>
-
+            android:exported="true" />
         <activity
             android:name=".SystemMessageActivity"
             android:exported="true">
-
+        </activity>
+        <activity
+            android:name=".ServiceActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
