@@ -269,6 +269,10 @@
         <activity
             android:name=".ServiceActivity"
             android:exported="true">
+        </activity>
+        <activity
+            android:name=".IPCActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
