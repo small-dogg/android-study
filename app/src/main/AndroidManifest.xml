@@ -281,6 +281,10 @@
         <activity
             android:name=".FragmentLifecycleActivity"
             android:exported="true">
+        </activity>
+        <activity
+            android:name=".FragmentViewActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
