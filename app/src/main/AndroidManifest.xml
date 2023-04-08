@@ -293,6 +293,10 @@
         <activity
             android:name=".ListFragmentActivity"
             android:exported="true">
+        </activity>
+        <activity
+            android:name=".DialogFragmentActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
