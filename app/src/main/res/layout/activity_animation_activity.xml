@@ -4,18 +4,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SecondActivity2">
+    tools:context=".MainActivity" >
 
     <TextView
-        android:id="@+id/textView40"
+        android:id="@+id/textView70"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Second Activity"
+        android:text="First Activity"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <Button
-        android:id="@+id/button83"
+        android:id="@+id/button131"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Activity 종료" />
+        android:text="SecondActivity 실행" />
 </LinearLayout>

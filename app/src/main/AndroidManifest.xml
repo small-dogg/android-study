@@ -24,10 +24,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Androidstudy"
         tools:targetApi="31">
+        <activity
+            android:name=".SecondActivity3"
+            android:exported="false" />
+
         <service
             android:name=".IPCTestService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
         <service
             android:name=".TestService"
             android:enabled="true"
@@ -75,7 +79,7 @@
             android:name=".ThirdActivity"
             android:exported="false" />
         <activity
-            android:name=".SecondActivity_2"
+            android:name=".SecondActivity2"
             android:exported="false" />
         <activity
             android:name=".SecondActivity"
@@ -265,41 +269,36 @@
             android:exported="true" />
         <activity
             android:name=".SystemMessageActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".ServiceActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".IPCActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".FragmentActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".FragmentLifecycleActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".FragmentViewActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".ActivityControllerActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".ListFragmentActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".DialogFragmentActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".FragmentAnimationActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".ActivityAnimationActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

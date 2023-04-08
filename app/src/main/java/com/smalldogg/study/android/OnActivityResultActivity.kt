@@ -16,7 +16,7 @@ class OnActivityResultActivity : AppCompatActivity() {
         setContentView(R.layout.on_activity_result_activity)
 
         button82.setOnClickListener {
-            val second_intent = Intent(this, SecondActivity_2::class.java)
+            val second_intent = Intent(this, SecondActivity2::class.java)
 //            startActivity(second_intent)
 
             startActivityForResult(second_intent, SECOND_ACTIVITY)

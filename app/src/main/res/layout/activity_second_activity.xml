@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SecondActivity2">
+    tools:context=".SecondActivity3">
 
     <TextView
-        android:id="@+id/textView40"
+        android:id="@+id/textView71"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Second Activity"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <Button
-        android:id="@+id/button83"
+        android:id="@+id/button132"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Activity 종료" />
