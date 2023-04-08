@@ -10,7 +10,7 @@ class DialogFragmentActivity : AppCompatActivity() {
         setContentView(R.layout.dialog_fragment_activity)
 
         button129.setOnClickListener {
-            val subFragment = SubFragment5()
+            val subFragment = SubFragment4()
             subFragment.show(supportFragmentManager, "tag")
         }
     }

@@ -6,7 +6,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
 import kotlinx.android.synthetic.main.dialog_fragment_activity.*
 
-class SubFragment5: DialogFragment() {
+class SubFragment4: DialogFragment() {
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         val mainActivity = activity as DialogFragmentActivity
 

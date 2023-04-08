@@ -297,6 +297,10 @@
         <activity
             android:name=".DialogFragmentActivity"
             android:exported="true">
+        </activity>
+        <activity
+            android:name=".FragmentAnimationActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
