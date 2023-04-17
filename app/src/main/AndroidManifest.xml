@@ -313,6 +313,10 @@
         <activity
             android:name=".ActionBarNavigationActivity"
             android:exported="true">
+        </activity>
+        <activity
+            android:name=".ActionBarCustomActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
