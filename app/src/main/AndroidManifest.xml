@@ -25,6 +25,9 @@
         android:theme="@style/Theme.Androidstudy"
         tools:targetApi="31">
         <activity
+            android:name=".SecondActivity5"
+            android:exported="false" />
+        <activity
             android:name=".SecondActivity4"
             android:exported="false" />
         <activity
@@ -302,28 +305,28 @@
             android:exported="true" />
         <activity
             android:name=".ActivityAnimationActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".ActionBarActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".ActionViewActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".ActionBarNavigationActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".ActionBarCustomActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".ToolbarActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".ToolbarActionViewActivity"
             android:exported="true">
         </activity>
         <activity
-            android:name=".ToolbarActionViewActivity"
+            android:name=".ToolbarNavigationActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
