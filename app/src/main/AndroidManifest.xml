@@ -336,6 +336,10 @@
         <activity
             android:name=".AppBarActivity"
             android:exported="true">
+        </activity>
+        <activity
+            android:name=".TabLayoutActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
