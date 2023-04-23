@@ -25,6 +25,17 @@
         android:theme="@style/Theme.Androidstudy"
         tools:targetApi="31">
         <activity
+            android:name=".DrawerLayoutActivity"
+            android:exported="true"
+            android:label="@string/title_activity_drawer_layout"
+            android:theme="@style/Theme.Androidstudy.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".SecondActivity5"
             android:exported="false" />
         <activity
@@ -311,40 +322,32 @@
             android:exported="true" />
         <activity
             android:name=".ActionViewActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".ActionBarNavigationActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".ActionBarCustomActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".ToolbarActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".ToolbarActionViewActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".ToolbarNavigationActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".ViewPager2Activity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".AppBarActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".TabLayoutActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
